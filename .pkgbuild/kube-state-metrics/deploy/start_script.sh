@@ -11,8 +11,7 @@
 app_folder="kube-state-metrics-exporter"                 # 项目根目录
 process_name="kube-state-metrics-exporter"       # 进程名
 
-install_base="/usr/local/easyops"          # 安装根目录
-data_base="/data/easyops"             # 日志/数据根目录
+install_base="/data/exporter"          # 安装根目录
 
 #############################################################
 # 通用前置
@@ -33,12 +32,8 @@ start_cmd="./bin/kube-state-metrics-exporter --port=port1 --telemetry-port=port2
 
 
 # 日志目录
-log_path="${data_base}/${app_folder}/log"
+log_path="${install_base}/${app_folder}/log"
 mkdir -p ${log_path}
-
-# 数据目录
-data_path="${data_base}/${app_folder}/data"
-mkdir -p ${data_path}
 
 
 #############################################################

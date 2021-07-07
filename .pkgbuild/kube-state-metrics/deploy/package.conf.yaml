@@ -1,6 +1,6 @@
 service_list:
-  - name: logic.kube_state_metrics_exporter
-    port: 9403
+  - name: ~
+    port: ~
     host: ~
 dependencies: ~
 start_dependencies: []
